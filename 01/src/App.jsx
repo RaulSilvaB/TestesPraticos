@@ -1,6 +1,8 @@
 import "./App.css";
 import Composicao from "./components/Composicao";
+import Counter from "./components/Counter";
 import HelloWorld from "./components/HelloWorld";
+import ProfileClass from "./components/ProfileClass";
 import Props from "./components/Props";
 import TresProps from "./components/TresProps";
 
@@ -24,6 +26,12 @@ function App() {
 
       <h2>4 - Composição de componentes</h2>
       <Composicao membrers={membrers} />
+
+      <h2>5 - Componente de classe</h2>
+      <ProfileClass name="Goku" job="Sayajin" age={889} />
+
+      <h2>6 - Contador de clicks</h2>
+      <Counter />
     </>
   );
 }
