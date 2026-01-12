@@ -1,6 +1,7 @@
 import "./App.css";
 import Clock from "./components/Clock";
 import Multiplos from "./components/Multiplos";
+import TodoList from "./components/TodoList";
 import Toggle from "./components/Toggle";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
 
       <h2>3 - relógio em tempo real</h2>
       <Clock />
+
+      <h3>4 - Lista de Tarefas</h3>
+      <TodoList />
     </>
   );
 }
