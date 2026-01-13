@@ -4,6 +4,8 @@ const TodoList = () => {
   const [task, setTask] = useState("");
   const [todos, setTodos] = useState([]);
 
+  const [filter, setFilter] = useState("");
+
   const addTodo = (e) => {
     e.preventDefault();
 
@@ -27,15 +29,26 @@ const TodoList = () => {
           onChange={(e) => setTask(e.target.value)}
         />
         <button onClick={addTodo}>Adicionar</button>
+
+        <h4>
+          Filtro:{" "}
+          <input
+            type="text"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+          />
+          <ul>
+            {todos
+              .filter((todo) => todo.task.includes(filter))
+              .map((todo) => (
+                <li key={todo.id}>
+                  {todo.task}{" "}
+                  <button onClick={() => removeTask(todo.id)}>Del</button>{" "}
+                </li>
+              ))}
+          </ul>
+        </h4>
       </form>
-      <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>
-            {todo.task}{" "}
-            <button onClick={() => removeTask(todo.id)}> remove</button>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
