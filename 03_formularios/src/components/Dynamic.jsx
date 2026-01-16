@@ -1,4 +1,3 @@
-import { values } from "lodash";
 import { useState } from "react";
 
 const Dynamic = () => {
