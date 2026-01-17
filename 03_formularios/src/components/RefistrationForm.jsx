@@ -8,7 +8,8 @@ const RefistrationForm = () => {
   });
 
   function handleChange(event) {
-    setValues({ ...values, [event.target.name]: event.target.value });
+    const { name, value } = event.target;
+    setValues({ ...values, [name]: value });
   }
 
   const handleSubmit = (event) => {
