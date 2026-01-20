@@ -1,0 +1,20 @@
+$card-background-color: #b4c4d4;
+$card-border-color: #e9ecef;
+$card-radius: 5px;
+
+.card {
+  background-color: $card-background-color;
+  border: 5px solid $card-border-color;
+  padding: 20px;
+  margin: 20px 0;
+
+  .card-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    font-size: 1.5em;
+  }
+}

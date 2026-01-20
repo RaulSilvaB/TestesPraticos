@@ -8,7 +8,7 @@ import ThemeToggle from "./components/ThemeToggle";
 function App() {
   return (
     <>
-      <h1>1 - Hello World</h1>
+      <h1>1 - Inline</h1>
       <HelloWorld />
 
       <h1>2 - Estilos com CSS Externo</h1>
@@ -21,7 +21,7 @@ function App() {
       <StyledComponentExample />
 
       <h1>4 - SASS com React</h1>
-      <Card />
+      <Card title={"Titulo do Card"} body={"A descrição é essa aqui"} />
     </>
   );
 }
