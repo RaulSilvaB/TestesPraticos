@@ -1,9 +1,14 @@
-import React from 'react'
+import { useSearchParams } from "react-router-dom";
 
 const Search = () => {
-  return (
-    <div>Search</div>
-  )
-}
+  const [seachParams] = useSearchParams();
+  const query = seachParams.get("query");
 
-export default Search
+  return (
+    <div>
+      <h2>Resultados da busca de {query}</h2>
+    </div>
+  );
+};
+
+export default Search;

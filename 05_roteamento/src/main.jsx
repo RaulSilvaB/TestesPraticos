@@ -38,6 +38,10 @@ const router = createBrowserRouter([
         path: "/usuarios/:userId",
         element: <User />,
       },
+      {
+        path: "/search",
+        element: <Search />,
+      },
     ],
   },
 ]);
