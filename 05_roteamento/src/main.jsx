@@ -15,6 +15,9 @@ import Sobre from "./components/Sobre";
 //2 rota paremetrizada
 import User from "./components/User";
 import NotFound from "./components/NotFound.jsx";
+import Auth from "./components/Auth.jsx";
+
+const isAuth = false;
 
 const router = createBrowserRouter([
   {
@@ -28,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/sobre",
-        element: <Sobre />,
+        element: isAuth ? <Sobre /> : <Auth />,
       },
       {
         path: "/contato",

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SearchForm from "./SearchForm";
 
 const Navbar = () => {
+  const isAuth = false;
   return (
     <nav>
       <ul>
